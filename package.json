@@ -44,7 +44,7 @@
     "lodash": "~4.17.19",
     "meow": "~11.0.0",
     "picocolors": "~1.0.0",
-    "terminal-link": "~2.1.1",
+    "terminal-link": "~3.0.0",
     "update-notifier": "~6.0.2"
   },
   "devDependencies": {
