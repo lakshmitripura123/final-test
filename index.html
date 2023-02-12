@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <!-- Search Engine -->
+  <meta name="description" content="No more manual work in your software releases.">
+  <meta name="image" content="https://kikobeats.github.io/automate-release/media/banner.png">
+  <link rel="canonical" href="https://kikobeats.github.io/automate-release" />
+  <title>Automate Release – No more manual work in your software releases.</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+  <!-- Schema.org for Google -->
+  <meta itemprop="name" content="Automate Release – No more manual work in your software releases.">
+  <meta itemprop="description" content="No more manual work in your software releases.">
+  <meta itemprop="image" content="https://kikobeats.github.io/automate-release/media/banner.png">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Automate Release">
+  <meta name="twitter:description" content="No more manual work in your software releases.">
+  <meta name="twitter:image" content="https://kikobeats.github.io/automate-release/media/banner.png">
+  <meta name="twitter:label1" value="Installation" />
+  <meta name="twitter:data1" value="npx automate-release" />
+  <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+  <meta property="og:title" content="Automate Release">
+  <meta property="og:logo" content="https://kikobeats.github.io/automate-release/media/logo.png">
+  <meta property="og:description" content="No more manual work in your software releases.">
+  <meta property="og:image" content="https://kikobeats.github.io/automate-release/media/banner.png">
+  <meta property="og:url" content="https://kikobeats.github.io/automate-release">
+  <meta property="og:type" content="website">  
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://kikobeats.github.io/automate-release/media/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="https://kikobeats.github.io/automate-release/media/favicon-16x16.png" sizes="16x16" />
+
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.11.1/tocbot.css">
+
+</head>
+<body>
+  <style>
+    :root {
+      --microlink-background-color: #1A1A1A;
+      --microlink-color: white;
+      --microlink-border-color: #666;
+      --microlink-hover-border-color: #999;
+    }
+
+    body,
+    .anchor span,
+    .sidebar ul li a,
+    .markdown-section h1, 
+    .markdown-section h2, 
+    .markdown-section h3, 
+    .markdown-section h4, 
+    .markdown-section strong
+    .markdown-section blockquote,
+    .markdown-section blockquote p,
+    .markdown-section em {
+      color: #303336;
+    }
+
+    .markdown-section blockquote p {
+      font-weight: 400;
+    }
+
+    .app-name-link img {
+      width: 180px;
+      margin-bottom: 18px;
+    }
+
+    .markdown-section {
+      max-width: 960px;
+    }
+
+    .markdown-section pre {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .markdown-section a {
+      text-decoration: none;
+    }
+
+    .markdown-section a:hover {
+      text-decoration: underline;
+    }
+
+    .markdown-section {
+      font-size: 18px;
+      line-height: 25.2px;
+    }
+
+    #main h1,
+    #main h2,
+    #main h3,
+    #main h4,
+    #main h5,
+    #main h6,
+    #main blockquote,
+    #main ul,
+    #main p:not(.img-container) {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 650px;
+    } 
+
+    .microlink_card__content_url p {
+      margin-left: 0 !important;
+    }
+  </style>
+  <div id="app"></div>
+  <aside id="toc"></aside>
+  <script>
+    window.$docsify = {
+      name: 'Automate Release',
+      logo: 'media/headline.png',
+      repo: 'Kikobeats/automate-release',
+      themeColor: '#a98759',
+      plugins: [
+        function(hook, vm) {
+          hook.ready(function() {
+            const elements = document.querySelectorAll("#main img")
+            elements.forEach(el => el.parentNode.classList.add('img-container'))
+      
+            const externalLinks = document.querySelectorAll("main a[target='_blank']")
+            microlinkHover(externalLinks)
+          })
+        }
+      ]
+    }
+  </script>
+  <script src="//cdn.jsdelivr.net/combine/npm/react@16/umd/react.production.min.js,npm/react-dom@16/umd/react-dom.production.min.js,npm/react-is@16/umd/react-is.production.min.js,npm/styled-components@5/dist/styled-components.min.js,npm/@microlink/mql@latest/dist/mql.min.js,npm/@microlink/hover-vanilla@latest/dist/microlink.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+</body>
+</html>
